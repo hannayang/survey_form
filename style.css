@@ -1,0 +1,139 @@
+/* -----------Global Style----------- */
+html,
+body {
+    background-color: lightskyblue;
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+}
+header {
+    font-size: 1rem; 
+    margin: 1.5rem;
+    text-align: center;
+}
+p {
+    font-size: 1rem;
+}
+/* -----------Form part----------- */
+main {
+    width: 75%;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 7px;
+    padding: 2rem 1rem 1rem 1rem; 
+}
+.labels { 
+   padding-bottom: 0.5rem;
+}
+.rightTab {
+  padding-bottom: 1.5rem;
+}
+.input-field { 
+    font-size: 0.9rem;
+    width: 60%;
+    height: 1.3rem;
+    padding: 0.2rem 0.5rem;
+    border: 0.0625rem solid gray;
+    border-radius: 3px;
+}
+[type="date"] {
+  font-family: 'Roboto', sans-serif;
+}
+.dropdown {
+  height: 1.7rem;
+  width: 85%;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li label {
+  margin-left: 0.5rem;
+  line-height: 1.6rem;
+}
+.specify {
+  margin-left:0;
+}
+.input-textarea {  
+    width: 90%;
+    height: 6rem;
+}
+.btnDiv {
+  text-align: center;
+}
+.btn {
+    font-size: 1rem; 
+    text-transform: uppercase;
+    padding: 0.5rem 0.8rem;
+    background-color:#59ace0; 
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    width: 7rem;
+    margin: 1rem;
+}
+.btn:hover {
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+/* -----------Footer----------- */
+footer {
+  background-color: #6093ac;
+  color: white;
+  margin-top: 2rem;
+  text-align: center;
+}
+footer p{
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  margin-bottom: 0; 
+}
+/* -----------@media----------- */
+@media (min-width: 700px) {
+  body {
+    text-align: center;
+  }
+  header {
+    font-size: 1.5rem; 
+  }
+  main {
+    width: 80%;
+  }
+  .labels {
+    display: inline-block;
+    line-height: 1.6rem;
+    text-align: right; 
+    width: 41%;
+    margin: 0.7rem;
+    padding: 0;
+  }
+  .rightTab {
+    display: inline-block;
+    text-align: left; 
+    width: 40%;
+    vertical-align: top;
+    margin: 0.7rem;
+    padding: 0;
+  }
+  .input-field {
+    margin-left: 2.5rem;  
+    width: 60%;
+    height: 1.04rem;
+  }
+  .dropdown {
+  height: 1.7rem;
+  }
+  ul {
+    margin: 0 0 0 2.3rem;
+  }
+  .specify {
+    margin-left: 0.1rem;
+    width: 11rem;
+  }
+  .input-textarea {
+    height: 4rem; 
+    width: 90%;
+  }
+}

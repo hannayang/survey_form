@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>
+      Survey Form - Peking Opera Promotion
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1> Survey Form </h1>
+      <p> Let us know how we can promote Peking Opera amongst overseas Chinese communities </p>
+    </header>
+    <main>
+      <form action="/submit-promotion-suggestions">
+        <div class="rowTab">
+          <div class="labels">
+             <label id="name-label" for="name">* Name: </label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email">* Email:</label>
+          </div>
+          <div class="rightTab">
+             <input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label id="age-label" for="age"> Age:</label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="number" name="age" id="age" class="input-field" placeholder="Age" min="1" max="130">
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+             <label id="sincewhen-label" for="since-when">* Since when did you start to watch Peking Opera?</label>
+          </div>
+          <div class="rightTab">
+             <input autofocus type="date" name="date" class="input-field" required>
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label id="exposure-label" for="dropdown">* Which level of exposure to Peking Opera describes you?</label>
+          </div>
+          <div class="rightTab">
+            <select id="dropdown" name="exposure-level" class="input-field dropdown">
+              <option disabled-value> - Select your exposure - </option>
+              <option value="professional-performer"> Professional performer </option>
+              <option value="amateur-performer"> Amateur performer </option>
+              <option value="frequently-watch"> Frequently watch </option>
+              <option value="sometimes-watch"> Sometimes watch </option>
+              <option value="occasionally-watch"> Occasionally watch </option>
+              <option value="almost-never-watch"> Almost never watch </option>
+            </select>
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">  
+             <label id="likelihood" for="likelihood"> * How likely would you recommend Peking Opera to friends?</label>
+          </div>
+          <div class="rightTab">
+            <ul>
+                <li><input type="radio" name="radio-buttons" value="1" id="definitely" class="userRatings"><label for="definitely">Definitely</label></li>
+                <li><input type="radio" name="radio-buttons" value="2" id="maybe" class="userRatings"><label for="maybe">Maybe</label></li>
+                <li><input type="radio" name="radio-buttons" value="3" id="notsure" class="userRatings"><label for="notsure">Not sure</label></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+              <label id="likeMost" for="likeMost"> * What do you like in Peking Opera? <br> (Check all that apply)</label>
+          </div>
+          <div class="rightTab">
+            <ul>
+                <li><input type="checkbox" name="checkbox" value="1" id="tones" class="likeMost"><label for="tones">Singing tones</label></li>
+                <li><input type="checkbox" name="checkbox" value="2" id="instrument" class="likeMost"><label for="instrument">Instrument and music</label></li>
+                <li><input type="checkbox" name="checkbox" value="3" id="makeup" class="likeMost"><label for="makeup">Makeup styles</label></li>
+                <li><input type="checkbox" name="checkbox" value="4" id="stories" class="likeMost"><label for="stories">Stories</label></li>
+                <li><input type="checkbox" name="checkbox" value="5" id="kongfu" class="likeMost"><label for="kongfu">Kongfu and other actions</label></li>
+                <li><input type="checkbox" name="checkbox" value="6" id="others" class="likeMost"><label for="others">Others (please specify in the field below)</label></li>
+                <label for="specify">Please specify: </label><input type="text" name="specifyPreference" id="specify" class="input-field specify">
+            </ul>
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label for="suggestions">* Any suggestions on promoting Peking Opera amongst overseas Chinese communities?</label>
+          </div>
+          <div class="rightTab">
+             <textarea class="input-field input-textarea" id="suggestions" name="suggestions" placeholder="Enter your suggestions here..." maxlength="500"></textarea>
+          </div>
+        </div>
+        <div class="btnDiv">
+          <button class="btn" type="submit"> Submit </button>
+        </div>  
+      </form>
+    </main>
+  <footer>
+    <p> Hanna Yang's survey form practice - freeCodeCamp HTML & CSS Project 2</p>
+  </footer>
+</body>
+</html>
