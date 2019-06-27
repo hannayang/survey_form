@@ -80,7 +80,6 @@ li label {
 
 /* -----------Footer----------- */
 footer {
-  background-color: #6093ac;
   color: white;
   margin-top: 2rem;
   text-align: center;
@@ -135,5 +134,39 @@ footer p{
   .input-textarea {
     height: 4rem; 
     width: 90%;
+  }
+}
+
+@media (min-width: 1500px) {
+  body {
+    margin-top: 100px; 
+  }
+  .rowTab {
+    margin-bottom: 30px; 
+  }
+  li {
+    margin-bottom: 15px; 
+  }
+  header {
+    font-size: 30px; 
+  }
+  p {
+    font-size: 25px; 
+    margin: 50px auto; 
+  }
+  .labels {
+    font-size: 20px; 
+  }  
+  .rightTab {
+    font-size: 20px; 
+  }
+  .input-field {
+    font-size: 18px; 
+  }
+  main {
+    margin-bottom: 150px; 
+  }
+  footer p{
+    font-size: 20px;
   }
 }
