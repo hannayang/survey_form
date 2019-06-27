@@ -82,11 +82,11 @@ li label {
 footer {
   color: white;
   margin-top: 2rem;
+  margin-bottom: 40px; 
   text-align: center;
 }
-footer p{
+footer p {
   font-size: 0.9rem;
-  padding: 0.3rem;
   margin-bottom: 0; 
 }
 /* -----------@media----------- */
